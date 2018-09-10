@@ -22,7 +22,15 @@ class LoginForm extends Component {
                     />
                 </CardSection>
 
-                <CardSection/>
+                <CardSection>
+                    <Input 
+                    secureTextEntry={true}
+                    placeholder="Password"
+                    label="Password"
+                    value={this.state.password}
+                    onChangeText={ password => this.setState({ password }) }
+                    />
+                </CardSection>
 
                 <CardSection>
                     <Button>
