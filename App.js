@@ -10,14 +10,15 @@ export default class App extends React.Component {
 
   componentWillMount() {
     // Initialize Firebase
-    firebase.initializeApp( {
-      apiKey: 'AIzaSyCaZSNaivtkMJFVYjlxrBh20R6ho4EyEaQ',
-      authDomain: 'authentication-f7f56.firebaseapp.com',
-      databaseURL: 'https://authentication-f7f56.firebaseio.com',
-      projectId: 'authentication-f7f56',
-      storageBucket: 'authentication-f7f56.appspot.com',
-      messagingSenderId: '135816361791'
-    });
+    var config = {
+      apiKey: "AIzaSyCaZSNaivtkMJFVYjlxrBh20R6ho4EyEaQ",
+      authDomain: "authentication-f7f56.firebaseapp.com",
+      databaseURL: "https://authentication-f7f56.firebaseio.com",
+      projectId: "authentication-f7f56",
+      storageBucket: "authentication-f7f56.appspot.com",
+      messagingSenderId: "135816361791"
+    };
+    firebase.initializeApp(config);
   }
 
   render() {
